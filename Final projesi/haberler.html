@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haberler</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background-color: #eef5ee;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ÜST MENÜ ELEMANLARI */
+    #anasayfa {
+      position: absolute;
+      top: 10px;
+      left: 217px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #haberler {
+      position: absolute;
+      top: 10px;
+      left: 410px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #ekohesaplayıcı {
+      position: absolute;
+      top: 10px;
+      left: 580px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #kullanıcıhesabı {
+      position: absolute;
+      top: 10px;
+      left: 855px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #günlükgörevler {
+      position: absolute;
+      top: 10px;
+      left: 1125px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 1;
+    }
+
+    #logo {
+      position: absolute;
+      top: -5px;
+      left: 20px;
+      font-size: 50px;
+      margin: 0;
+      z-index: 1;
+      color: green;
+    }
+
+    /* ÇİZGİ VE DİKDÖRTGEN */
+    #cizgi {
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      width: 1650px;
+      height: 2px;
+      background-color: black;
+      z-index: 1;
+    }
+
+    #dikdortgen1 {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      width: 1525px;
+      height: 50px;
+      background-color: #fdfeff;
+      border-radius: 15px;
+      box-sizing: border-box;
+    }
+
+    /* HABER İÇERİK ALANI */
+    .haber-icerik-alani {
+      position: absolute;
+      top: 100px;
+      left: 50px;
+      width: 1400px;
+      padding-bottom: 50px;
+    }
+
+    h1.ana-baslik {
+      color: #1b5e20;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .alt-aciklama {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    h2.haber-baslik {
+      color: #2e7d32;
+      font-size: 24px;
+      margin-top: 25px;
+      margin-bottom: 5px;
+    }
+
+    p.haber-metni {
+      line-height: 1.6;
+      font-size: 16px;
+      text-align: justify;
+      color: #222;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- ÜST MENÜ VE LOGO -->
+  <h1 id="anasayfa">Ana Sayfa</h1>
+  <h1 id="haberler">Haberler</h1>
+  <h1 id="ekohesaplayıcı">Eko Hesaplayıcı</h1>
+  <h1 id="kullanıcıhesabı">Kullanıcı Kesabı</h1>
+  <h1 id="günlükgörevler">Günlük Görevler</h1>
+  <h1 id="logo">♻</h1>
+
+  <div id="cizgi"></div>
+  <div id="dikdortgen1"></div>
+
+  <!-- HABERLER İÇERİĞİ -->
+  <div class="haber-icerik-alani">
+
+    <h1 class="ana-baslik">Dünyanın Dört Bir Yanından İklim Haberleri</h1>
+    <p class="alt-aciklama">Dünyadan ve Türkiye'den en güncel iklim haberleri.</p>
+    
+    <hr>
+
+    <!-- HABER 1 -->
+    <h2 class="haber-baslik">1. BM ve Dünya Meteoroloji Örgütü'nden Rekor El Niño Uyarısı</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      Dünya Meteoroloji Örgütü ve Birleşmiş Milletler uzmanları, küresel ölçekte etkili olan El Niño iklim olayının hızla güçlendiğini açıkladı. 
+      Yapılan son analizlere göre dünya genelinde kayıtlara geçen en sıcak iki ay geride bırakıldı. 
+      Uzmanlar, Pasifik Okyanusu'ndaki bu ısınmanın yıl sonuna doğru zirve yapacağını öngörüyor. 
+      Küstah sıcaklıkların mevsimsel etkilerle birleşmesi kuraklık riskini ciddi oranda artırıyor. 
+      Özellikle orman yangınlarının, duman ve hava kirliliği ile birleşerek insan sağlığını tehdit edeceği belirtiliyor. 
+      Sıcaklık eşiklerinin aşılmasıyla birlikte hastanelere yapılan başvurularda artış bekleniyor. 
+      Gelişmekte olan ülkelerde tarımsal rekolte kayıplarının yaşanabileceği uyarısı yapıldı. 
+      Küresel gıda güvenliği açısından acil tedbirlerin alınması gerektiği vurgulanıyor. 
+      Hükümetlerin aşırı hava olaylarına karşı acil eylem planlarını devreye sokması isteniyor. 
+      İklim uzmanları, bu sürecin etkilerinin 2027 yılına kadar hissedilebileceğini dile getiriyor.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 2 -->
+    <h2 class="haber-baslik">2. Pasifik Ada Ülkeleri İçin Yüzyılın Tahliye Planı Başladı</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      İklim krizi sebebiyle yükselen deniz seviyeleri Pasifik adalarını yok olma tehlikesiyle karşı karşıya getirdi. 
+      Tuvalu ve Kiribati gibi ada ülkelerinde ortalama kara yüksekliği deniz seviyesinin sadece iki metre üstünde yer alıyor. 
+      NASA'nin son verilerine göre gelecek 30 yıl içinde bu bölgelerde su seviyesinin en az 15 santimetre daha yükselmesi bekleniyor. 
+      Bu durum kıyıların kaybolmasına ve içme suyu kaynaklarının tuzlanmasına neden oluyor. 
+      Devletler, vatandaşlarının geleceğini korumak adına tarihte eşi benzeri görülmemiş tahliye planları hazırlıyor. 
+      Tuvalu hükümeti, vatandaşlarının kademeli olarak göç edebilmesi için Avustralya ile resmi anlaşmalar imzaladı. 
+      Kiribati ise halkının gelecekte yerleşebilmesi için başka ülkelerden toprak satın alma yoluna gitti. 
+      Ada halkları yüzlerce yıllık kültürlerini ve ata topraklarını geride bırakma riskiyle karşı karşıya. 
+      Uluslararası toplum, yaşanacak bu iklim mültecileri dalgası için henüz ortak bir hukuki statü oluşturabilmiş değil. 
+      Bu durum, iklim değişikliğinin sadece bir çevre sorunu değil, doğrudan bir varoluş krizi olduğunu gösteriyor.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 3 -->
+    <h2 class="haber-baslik">3. İklim Krizi Türkiye'yi Vurdu: Yaz Mevsiminde 32 Gün Fazladan Sıcak Yaşandı</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      İklim araştırmaları merkezi Climate Central tarafından yayınlanan rapora göre Türkiye'de bu yaz mevsiminin dengesi tamamen bozuldu. 
+      İnsan kaynaklı iklim değişikliği nedeniyle Türkiye genelinde vatandaşlar ortalama 32 gün fazladan tehlikeli sıcaklığa maruz kaldı. 
+      Aşırı sıcaklardan en çok etkilenen şehir 40 gün ilave sıcaklık yükü ile Adana oldu. 
+      Adana'yı 39 günle Gaziantep, 37 günle İstanbul ve 34 günle Bursa takip etti. 
+      İstanbul'da yaşayanlar için yaz dönemindeki her üç günden biri iklim krizinin eklediği yüksek sıcaklıklarla geçti. 
+      Aşırı sıcak dalgaları şehirlerdeki yaşlılar, çocuklar ve kronik hastalar için ciddi sağlık riskleri oluşturdu. 
+      Tarım alanlarında kuraklık artarken barajlardaki su seviyeleri kritik eşiklerin altına geriledi. 
+      Uzmanlar kentlerdeki betonlaşmanın "ısı adası" etkisi yaratarak sıcaklığı daha da katladığını belirtiyor. 
+      Su kaynaklarının korunması ve şehirlerin iklim krizine dirençli hale getirilmesi için çağrılar yapılıyor. 
+      Türkiye'deki bu tablo, kıta genelinde yaşanan büyük küresel sıcaklık dalgasının bir parçası olarak değerlendiriliyor.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 4 -->
+    <h2 class="haber-baslik">4. Avrupa'da Temiz Enerji Devrimi: Rüzgar ve Güneş Fosil Yakıtları Geçti</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      Avrupa Birliği genelinde yenilenebilir enerji yatırımları tarihi bir başarıya ulaşarak fosil yakıt üretimini geride bıraktı. 
+      Yayınlanan son enerji raporlarına göre rüzgar ve güneş santrallerinden elde edilen elektrik miktarı toplam üretimin %50'sinden fazlasını oluşturdu. 
+      Özellikle Kuzey Denizi'ndeki rüzgar türbinleri ve Akdeniz çanağındaki güneş paneli kurulumları bu rekor artışta ana rolü oynadı. 
+      Kömür ve doğal gaz kullanımındaki sert düşüş sayesinde kıta genelindeki karbon emisyonları son yılların en düşük seviyesine geriledi. 
+      Uzmanlar, enerji depolama batarya teknolojilerinin gelişmesiyle birlikte elektrik şebekelerinin daha kararlı hale geldiğini belirtiyor. 
+      Yeşil dönüşüm teşvikleri sayesinde sanayi tesisleri ve konutlar hızla öz-tüketim sistemlerine geçiş yapıyor. 
+      Sanayi sektörünün temiz enerjiye adaptasyonu ile birlikte üretim maliyetlerinde de uzun vadeli düşüşler hedefleniyor. 
+      Birlik yetkilileri, 2030 iklim hedeflerine planlanandan çok daha kısa sürede ulaşılabileceğini ifade ediyor. 
+      Ancak iletim hatlarının modernizasyonu ve kıtalararası enerji aktarımı gibi altyapı ihtiyaçları hala çözüm bekliyor. 
+      Bu tarihi dönüşüm, küresel ölçekte fosil yakıtlardan çıkış sürecinin hızlanması adına güçlü bir örnek oluşturuyor.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 5 -->
+    <h2 class="haber-baslik">5. Amazon Yağmur Ormanlarında Dev "Karbon Tutucu" Ağaçlık Alanlar Keşfedildi</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      Uluslararası araştırmacılardan oluşan bir bilim ekibi, Amazon Havzası'nın derinliklerinde emisyon emme kapasitesi yüksek yeni bölgeler haritalandırdı. 
+      Uydu teknolojileri ve havadan lazer taramaları kullanılarak yapılan çalışmada, bu alanların atmosfere salınan milyonlarca ton karbonu emdiği saptandı. 
+      Yaşlı ve sık bitki örtüsüne sahip bu orman yapısı, gezegenin doğal dengesinin korunmasında hayati bir role sahip. 
+      Ancak yasadışı ağaç kesimi ve madencilik faaliyetleri, bu hassas ekosistemi doğrudan tehdit etmeye devam ediyor. 
+      Bilim insanları, ormansızlaşmanın durdurulmaması halinde bu alanların emici özelliğini yitirerek karbon salan bir kaynağa dönüşebileceği uyarısında bulunuyor. 
+      Bölge ülkelerinin koruma tedbirlerini artırması ve yerli halkların koruyucu haklarının genişletilmesi talep ediliyor. 
+      Biyoçeşitlilik açısından da zengin olan bu bölge, binlerce nadir türün son sığınağı durumunda. 
+      Küresel iklim fonlarından bu alanların mutlak koruma altına alınması için acil kaynak aktarılması isteniyor. 
+      Çalışma, doğal ormanların korunmasının yapay karbon yakalama teknolojilerinden çok daha etkili olduğunu bir kez daha kanıtlıyor. 
+      Amazonlar'daki bu potansiyelin sürdürülebilirliği, küresel sıcaklık artışının sınırlandırılması açısından kritik önem taşıyor.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 6 -->
+    <h2 class="haber-baslik">6. Antarktika Buz Tabakalarında Beklenmedik Erime: Deniz Seviyeleri Risk Altında</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      Kutup araştırmacıları, Antarktika'nın batısındaki devasa buzul kütlelerinin alt kısımlarında sıcak okyanus akıntıları nedeniyle hızlanan erimeler tespit etti. 
+      Sürekli yapılan hassas ölçümler, buzul tabakalarının karaya tutunduğu kritik noktaların gerilemeye başladığını gösteriyor. 
+      Bu durum, devasa buz bloklarının okyanusa kayma riskini artırarak küresel deniz seviyesi tahminlerinin güncellenmesine yol açtı. 
+      Bilim insanları, bu erimenin zincirleme bir reaksiyon başlatabileceği ve önümüzdeki yüzyıllarda kıyı kentlerini sular altında bırakabileceği konusunda uyardı. 
+      Okyanus sıcaklıklarındaki rekor artışlar, kutup bölgesindeki mevsimsel donma döngülerini de ciddi şekilde bozuyor. 
+      Kıyı bölgelerinde yaşayan milyonlarca insanın bu durumdan doğrudan etkileneceği tahmin ediliyor. 
+      Liman şehirlerinin şimdiden dalgakıran, bent ve yükseltilmiş altyapı projelerine bütçe ayırması gerektiği vurgulanıyor. 
+      Erime hızının yavaşlatılması için küresel seragazı emisyonlarının radikal bir şekilde kesilmesi şart. 
+      Birleşmiş Milletler İklim Paneli, kutup araştırmalarına ayrılan fonların ve uluslararası işbirliğinin artırılmasını çağrısında bulundu. 
+      Kutup buzullarındaki bu değişim, iklim krizinin geri döndürülemez noktaya yaklaşmasının en net işareti olarak görülüyor.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 7 -->
+    <h2 class="haber-baslik">7. Türkiye'de Akıllı Tarım ve Kuraklığa Dayanıklı Tohum Hamlesi Başladı</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      Tarım ve Orman Bakanlığı, iklim değişikliğine bağlı kuraklık ve su kısıtı riskine karşı kapsamlı bir adaptasyon projesi başlattı. 
+      Yerli imkanlarla geliştirilen kuraklığa dayanıklı tahıl ve baklagil tohumları, İç Anadolu ve Güneydoğu Anadolu'da denenmeye başlandı. 
+      Geleneksel sulama yöntemlerinin yerini alan damlama ve akıllı sensör destekli sistemler sayesinde su kullanımında %40 tasarruf hedefleniyor. 
+      Çiftçilere yeni nesil ekim teknikleri ve iklim dostu tarım uygulamaları konusunda bölgesel eğitimler veriliyor. 
+      Toprak nemini anlık ölçen teknolojik araçlar, gereksiz sulamanın önüne geçerek yeraltı su kaynaklarını korumayı amaçlıyor. 
+      Kuraklık nedeniyle verim kaybı yaşayan üreticilere destekleme ödemeleri ve uygun koşullu kredi imkanları sunuluyor. 
+      Uzmanlar, gıda arz güvenliğinin sağlanabilmesi için ürün haritasının iklim koşullarına göre yeniden çizilmesini öneriyor. 
+      Akıllı tarım uygulamalarının yaygınlaşması, hem ürün kalitesini artırıyor hem de toprağın yapısını koruyor. 
+      Projenin başarılı olması halinde Türkiye'nin kurak coğrafyalara yönelik tarımsal teknoloji ihracatı yapabileceği belirtiliyor. 
+      İklim krizine dirençli bir tarım sektörü, gelecekteki olası gıda krizlerinin önlenmesinde en temel kalkan olacak.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 8 -->
+    <h2 class="haber-baslik">8. Okyanus Asitlenmesi Deniz Ekosistemlerini ve Balıkçılığı Tehdit Ediyor</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      Atmosferde biriken yüksek miktardaki karbondioksit, denizler tarafından emilerek okyanusların kimyasal yapısını hızla değiştiriyor. 
+      Deniz biyologları, artan asitlik oranının mercan kayalıklarının kabuk oluşturmasını ve büyümesini engellediğini tespit etti. 
+      Mercanların yok olması, deniz canlılarının %25'ine ev sahipliği yapan hayati ekosistemlerin çöküşünü tetikliyor. 
+      Kabuklu deniz canlıları ve planktonlar, asidik ortamda dış kabuklarını korumakta zorlandığı için besin zincirinin tabanı zarar görüyor. 
+      Bu durum, küresel balıkçılık sektörünü ve deniz ürünlerine bağımlı olan milyarlarca insanın gıda kaynağını doğrudan tehdit ediyor. 
+      Kıyı ekonomileri ve küçük ölçekli balıkçılar, azalan balık stokları nedeniyle ciddi geçim sıkıntısı riskiyle karşı karşıya. 
+      Araştırmacılar, okyanus koruma alanlarının acilen genişletilmesi ve kıyı kirleticilerinin kısıtlanması gerektiğini belirtiyor. 
+      Deniz çayırları ve mangrov ormanlarının korunması, yerel düzeyde asitlenmeyi hafifleten doğal çözümler arasında sayılıyor. 
+      Uluslararası denizcilik örgütleri, gemi emisyonlarının azaltılması için yeni standartlar getirmeye hazırlanıyor. 
+      Okyanus sağlığının bozulması, gezegenin iklimini düzenleme kapasitesini de zayıflatan en büyük tehlikelerden biri.
+    </p>
+
+    <br><hr>
+
+    <!-- HABER 9 -->
+    <h2 class="haber-baslik">9. Küresel Şehirlerde "Yeşil Çatı" ve Dikey Orman Zorunluluğu Getiriliyor</h2>
+    <p class="haber-metni"><b>Yayın Tarihi:</b> Eylül 2026</p>
+    <p class="haber-metni">
+      İklim değişikliğinin neden olduğu kent içi aşırı sıcaklar ve sel baskınlarıyla mücadele etmek için yeni imar düzenlemeleri hayata geçiriliyor. 
+      Tokyo, Singapur ve Berlin gibi metropollerin ardından birçok dünya kenti, yeni binalarda "yeşil çatı" yapımını yasal zorunluluk haline getirdi. 
+      Bitkilendirilen çatılar ve dikey bahçeler, binaların ısı yalıtımına katkı sağlayarak klima kullanımını ve enerji tüketimini azaltıyor. 
+      Aynı zamanda şiddetli yağışlar sırasında yağmur suyunu tutarak şehir kanalizasyon sistemlerinin taşmasını engelliyor. 
+      Kent merkezlerindeki "kentsel ısı adası" etkisini kıran bu uygulamalar, hava kalitesinin yükselmesine de doğrudan katkı sağlıyor. 
+      Belediye yönetimleri, mevcut binalarını yeşil çatıya dönüştüren mülk sahiplerine vergi indirimleri ve hibe desteği sunuyor. 
+      Mimarlar ve şehir plancıları, binaların dış cephelerini doğal biyolojik çeşitliliği destekleyecek şekilde tasarlamaya başladı. 
+      Betonlaşmanın yoğun olduğu alanlarda kuş ve böcek türleri için yeni yaşam koridorları oluşturuluyor. 
+      Bu kentsel dönüşüm hamlesi, şehirlerin iklim şoklarına karşı daha dirençli ve yaşanabilir hale gelmesini amaçlıyor. 
+      Geleceğin mimarisinde doğayla bütünleşik tasarımlar, sürdürülebilirlik kriterlerinin en başında yer alacak.
+    </p>
+
+  </div>
+
+</body>
+</html>

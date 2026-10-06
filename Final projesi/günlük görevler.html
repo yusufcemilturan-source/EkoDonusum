@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Günlük Görevler</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background-color: #eef5ee;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ÜST MENÜ ELEMANLARI */
+    #anasayfa {
+      position: absolute;
+      top: 10px;
+      left: 217px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 2;
+    }
+
+    #haberler {
+      position: absolute;
+      top: 10px;
+      left: 410px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 2;
+    }
+
+    #ekohesaplayıcı {
+      position: absolute;
+      top: 10px;
+      left: 580px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 2;
+    }
+
+    #kullanıcıhesabı {
+      position: absolute;
+      top: 10px;
+      left: 855px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 2;
+    }
+
+    #günlükgörevler {
+      position: absolute;
+      top: 10px;
+      left: 1125px;
+      font-size: 30px;
+      margin: 0;
+      z-index: 2;
+    }
+
+    #logo {
+      position: absolute;
+      top: -5px;
+      left: 20px;
+      font-size: 50px;
+      margin: 0;
+      z-index: 2;
+      color: green;
+    }
+
+    /* ÇİZGİ VE DİKDÖRTGEN */
+    #cizgi {
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      width: 1650px;
+      height: 2px;
+      background-color: black;
+      z-index: 2;
+    }
+
+    #dikdortgen1 {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      width: 1525px;
+      height: 50px;
+      background-color: #fdfeff;
+      border-radius: 15px;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+
+    #dikdortgen2 {
+      position: absolute;
+      top: 100px;
+      left: 500px;
+      width: 700px;
+      height: 500px;
+      background-color: #96c9dd;
+      border-radius: 15px;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+
+    /* GÖREV METİNLERİ */
+    #yürü {
+      position: absolute;
+      top: 130px;
+      left: 515px;
+      font-size: 21px;
+      margin: 0;
+      z-index: 2;
+      letter-spacing: 3px;
+    }
+
+    #bisiklet {
+      position: absolute;
+      top: 220px;
+      left: 515px;
+      font-size: 21px;
+      margin: 0;
+      z-index: 2;
+      letter-spacing: 3px;
+    }
+
+    #geridönüşüm {
+      position: absolute;
+      top: 310px;
+      left: 515px;
+      font-size: 21px;
+      margin: 0;
+      z-index: 2;
+      letter-spacing: 3px;
+    }
+
+    #ışık {
+      position: absolute;
+      top: 400px;
+      left: 515px;
+      font-size: 21px;
+      margin: 0;
+      z-index: 2;
+      letter-spacing: 3px;
+    }
+
+    #duş {
+      position: absolute;
+      top: 490px;
+      left: 515px;
+      font-size: 21px;
+      margin: 0;
+      z-index: 2;
+      letter-spacing: 3px;
+    }
+
+    /* TİK KUTULARI (CHECKBOX) STİLLERİ */
+    .tik-kutusu {
+      position: absolute;
+      z-index: 3;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Orijinal checkbox'ı gizle */
+    .tik-kutusu input {
+      display: none;
+    }
+
+    /* Özel Tasarım Kare Kutucuk */
+    .kare {
+      width: 28px;
+      height: 28px;
+      background-color: #ffffff;
+      border: 3px solid #2e7d32;
+      border-radius: 6px;
+      position: relative;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Tik İşareti (✔) */
+    .kare::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+      top: 3px;
+      width: 7px;
+      height: 14px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    /* Seçildiğinde Yeşil Yap */
+    .tik-kutusu input:checked + .kare {
+      background-color: #2e7d32;
+    }
+
+    /* Seçildiğinde Tik İşaretini Göster */
+    .tik-kutusu input:checked + .kare::after {
+      display: block;
+    }
+
+    /* Görevlerin Yanındaki Kutucukların Konumları (Görevlerin tam sağında) */
+    #tik-yuru { top: 128px; left: 1120px; }
+    #tik-bisiklet { top: 218px; left: 1120px; }
+    #tik-geridonusum { top: 308px; left: 1120px; }
+    #tik-isik { top: 398px; left: 1120px; }
+    #tik-dus { top: 488px; left: 1120px; }
+  </style>
+</head>
+<body>
+
+  <!-- ÜST MENÜ VE LOGO -->
+  <h1 id="anasayfa">Ana Sayfa</h1>
+  <h1 id="haberler">Haberler</h1>
+  <h1 id="ekohesaplayıcı">Eko Hesaplayıcı</h1>
+  <h1 id="kullanıcıhesabı">Kullanıcı Hesabı</h1>
+  <h1 id="günlükgörevler">Günlük Görevler</h1>
+  <h1 id="logo">♻</h1>
+
+  <!-- GÖREV METİNLERİ -->
+  <h1 id="yürü">🚶 1 km yürü → +10</h1>
+  <h1 id="bisiklet">🚲 Bisiklet kullan → +20</h1>
+  <h1 id="geridönüşüm">♻️ Geri dönüşüm yap → +10</h1>
+  <h1 id="ışık">💡 Gereksiz ışıkları kapat → +5</h1>
+  <h1 id="duş">🚿 Duş süresini azalt → +10</h1>
+
+  <!-- GÖREVLERİN SAĞINDAKİ TİK KUTUCUKLARI -->
+  <label class="tik-kutusu" id="tik-yuru">
+    <input type="checkbox">
+    <span class="kare"></span>
+  </label>
+
+  <label class="tik-kutusu" id="tik-bisiklet">
+    <input type="checkbox">
+    <span class="kare"></span>
+  </label>
+
+  <label class="tik-kutusu" id="tik-geridonusum">
+    <input type="checkbox">
+    <span class="kare"></span>
+  </label>
+
+  <label class="tik-kutusu" id="tik-isik">
+    <input type="checkbox">
+    <span class="kare"></span>
+  </label>
+
+  <label class="tik-kutusu" id="tik-dus">
+    <input type="checkbox">
+    <span class="kare"></span>
+  </label>
+
+  <!-- ARKA PLAN VE DİKDÖRTGENLER -->
+  <div id="cizgi"></div>
+  <div id="dikdortgen1"></div>
+  <div id="dikdortgen2"></div>
+
+</body>
+</html>
